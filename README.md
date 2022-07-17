@@ -4,6 +4,25 @@
 
 
 
+## Stack & Heap
+
+A Program need memory to run, when a program is running, data must be stored in a **RAM** (Random Access Memory). Inside a running program there are two areas of memory that are used, namely the stack and the heap. Stacks and heaps are just ways of organizing RAM. The RAM itself is just a huge array of bytes.
+
+Stack is used to make **Static Memory allocation** and Heap is used to create **Dynamic Memory allocation**, both of which are stored in RAM (Random Access Memory).
+
+1. Variables allocated on the stack are stored directly in memory and access to static memory is very fast. 
+2. Variables allocated on the heap have memory allocated at run time and access to dynamic memory tends to be slow.
+
+The heap is a more flexible data structure in that memory can be allocated and freed from the heap in any order desired. It is not limited to LIFO. When you need data to exist in a pattern which can't be described by LIFO, you need something like a heap. 
+
+Another factor which plays into whether a piece of data goes on the heap or the stack, is whether the size of that data is known at compile time.
+
+
+
+---
+
+
+
 ## Memory
 
 Memory
@@ -15,7 +34,7 @@ Memory
 
 ## Buffer Memory
 
-Buffer memory are memory spaces that are used to store data temporarily within Dynamic Random Access Memory (RAM). CPU can store data temporarily, like the data to be forwarded to other slow speed output devices or other secondary storage devices, to enable the computer to execute other processes. It is implemented to match the speed of slow IO devices with processor.  It stores or holds the actual copy of data.
+A buffer is a piece of memory used to store something. **Buffer memory** are memory spaces that are used to store data temporarily within **Dynamic Random Access Memory (RAM)**. CPU can store data temporarily, like the data to be forwarded to other slow speed output devices or other secondary storage devices, to enable the computer to execute other processes. It is implemented to match the speed of slow IO devices with processor. It stores or holds the actual copy of data.
 
 
 
@@ -48,4 +67,4 @@ In Node.js or browser, Buffers are a global object, so no require is needed. Buf
 
 ## Cache Memory
 
-Cache memory spaces that are used to store data temporarily within high-speed memory Dynamic Random Access Memory (RAM). Cache are accessed frequently by processes to get faster Information that is used and accessed by most of the programs.   Cache are implemented to reduce the access time and improve the latency time of the frequently used data. The cache holds the copy of original data.   
+**Cache memory** spaces that are used to store data temporarily within high-speed memory **Static Random Access Memory (RAM)**. Cache are accessed frequently by processes to get faster Information that is used and accessed by most of the programs.   Cache are implemented to reduce the access time and improve the latency time of the frequently used data. The cache holds the copy of original data.   
